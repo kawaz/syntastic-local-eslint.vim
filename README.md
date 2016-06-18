@@ -5,13 +5,11 @@ Prefer local repo install of eslint over global install with syntastic
 Installation Instructions
 -------------------------
 
-Using [vim plugged](https://github.com/junegunn/vim-plug) you just need to add:
+Using [dein.vim](https://github.com/Shougo/dein.vim) you just need to add:
 
+```toml
+[[plugins]]
+repo = 'kawaz/syntastic-local-eslint.vim'
+hook_add = "let g:syntastic_javascript_checkers = ['eslint']"
 ```
-Plug 'mtscout6/syntastic-local-eslint.vim'
-```
 
-Inspired By
------------
-
-Inspired by http://blog.pixelastic.com/2015/10/05/use-local-eslint-in-syntastic/
